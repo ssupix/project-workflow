@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORKFLOW - Project Management App</title>
+    <link rel="stylesheet" href="./_sass/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">LOGO</div>
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#prices">PRICES</a>
+            <a href="#faq">FAQ</a>
+        </nav>
+        <div class="icons">
+            <i data-feather="twitter"></i>
+            <i data-feather="instagram"></i>
+            <i data-feather="sun" id="theme-toggle"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="grid">
+                <div class="col-6 hero-info">
+                    <div class="title">
+                        <h4>Your New Favourite Project Management App.</h4>
+                        <h1>WorkFlow</h1>
+                        <h2>Deliever projects on time, <br> every time</h2>
+                    </div>
+                    <div class="projects">
+                        <p>600+</p>
+                        <p>projects created with WorkFlow</p>
+                    </div>
+                </div>
+                <div class="col-6 video-hero video">
+                    <video src="./video/brainstorming.mp4" autoplay muted loop></video>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="grid">
+                <div class="col-3 video video-about">
+                    <video src="./video/notepad.mp4"></video>
+                </div>
+                <div class="col-5">
+                    <h3>Empower your remote workflow. Streamline collaboration and boost productivity.</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
