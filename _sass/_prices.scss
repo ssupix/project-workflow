@@ -1,0 +1,49 @@
+.card-wrap {
+    margin: 10rem 0;
+    width:  60%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-container {
+        width: 100%;
+
+        .card {
+            min-height: 26vw;
+            background-color: #A7B2FF;
+            border-radius: 7px;
+        }
+
+        .long-card {
+            min-height: 9vw;
+            background-color: #A7B2FF;
+            border-radius: 7px;
+        }
+    }
+}
+
+
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
+
+.answer {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--grayish-purple);
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

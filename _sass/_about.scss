@@ -1,0 +1,41 @@
+.video-about video {
+    width: 100%;
+}
+
+.about {
+    height: fit-content;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h3 {
+        width: 50%;
+        font-size: 50px;
+        font-weight: 100;
+        text-transform: uppercase;
+        margin-bottom: 8rem;
+    }
+
+    .info-wrap {
+        display: flex;
+        width: 100%;
+        flex-grow: 1;
+
+        .box {
+            width: 50%;
+            flex-grow: 1;
+            border: #A7B2FF solid 2px;
+            border-radius: 7px;
+        }
+
+        p {
+            width: 50%;
+            margin-left: 1rem;
+            font-size: 20px;
+        }
+    }
+    
+}

@@ -44,17 +44,78 @@
         <section class="about">
             <div class="grid">
                 <div class="col-3 video video-about">
-                    <video src="./video/notepad.mp4"></video>
+                    <video src="./video/notepad.mp4" autoplay muted loop></video>
                 </div>
-                <div class="col-5">
+                <div class="col-9 about-info">
                     <h3>Empower your remote workflow. Streamline collaboration and boost productivity.</h3>
+                    <div class="info-wrap">
+                        <div class="box"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur. Lectus lorem est ultrices risus proin. Tempus non turpis vitae placerat sed. Commodo vitae sed aliquam nunc duis turpis turpis in. Lectus sed at elit iaculis lacus dui sed viverra neque. Lectus quis in lacus fermentum odio tempor tortor. Adipiscing turpis in lectus consequat tempus mauris curabitur amet quis. Aliquam ac nisl elementum orci fusce sed consequat. In erat adipiscing arcu odio odio lectus amet ullamcorper. Ac non morbi nunc viverra nisl amet quam nulla.
+                            Pretium urna enim mi habitasse lacinia tincidunt enim consectetur. Auctor mauris non nulla posuere quam sagittis velit. Tristique velit scelerisque dictum turpis iaculis nisl id pellentesque. Ac massa viverra purus velit velit. Scelerisque etiam volutpat gravida quis nunc sed non nisi sed. Id semper donec mattis hendrerit augue. Viverra laoreet consectetur feugiat ac non. Amet magna sed etiam ante consequat eget.</p>
+                    </div>
                 </div>
             </div>
         </section>
+        <section class="prices">
+            <div class="card-wrap">
+                <div class="card-container grid">
+                    <div class="col-12">
+                        <h2>WorkFlow Price Plans</h2>
+                    </div>
+                    <div class="col-4 card"></div>
+                    <div class="col-4 card"></div>
+                    <div class="col-4 card"></div>
+                    <div class="col-12 long-card">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="faq">
+            <div class="grid">
+                <div class="s-1">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false">
+                            <span class="accordion-title">Why is the moon sometimes out during the day?</span>
+                            <span class="icon" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut.
+                            Ut tortor pretium viverra suspendisse potenti.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script>
         feather.replace();
+
+        const items = document.querySelectorAll('.accordion button');
+
+        function toggleAccordion() {
+        const itemToggle = this.getAttribute('aria-expanded');
+
+        for (i = 0; i < items.length; i++) {
+            items[i].setAttribute('aria-expanded', 'false');
+        }
+
+        if (itemToggle == 'false') {
+            this.setAttribute('aria-expanded', 'true');
+        }
+        }
+
+        items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
+
+
+
     </script>
 </body>
 </html>

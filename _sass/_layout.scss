@@ -6,7 +6,7 @@
     grid-auto-rows: auto;
     gap: 1rem;
     margin: 1rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .col-1 { grid-column: span 1; }

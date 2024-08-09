@@ -13,8 +13,9 @@
         border-radius: 7px;
         display: flex;
         flex-direction: column;
+        justify-content: end;
         gap: 1rem;
-        padding: 5rem;
+        padding: 3rem;
 
         h4 {
             text-transform: uppercase;
@@ -43,20 +44,13 @@
     }
 }
 
-.about {
-    max-height: 1000px;
-}
-
 .video{
+    max-height: 80vh;
     height: 100%;
     border-radius: 7px;
     overflow: hidden;
 
     &.video-hero video {
         height: 100%;
-    }
-
-    &.video-about video {
-        width: 100%;
     }
 }

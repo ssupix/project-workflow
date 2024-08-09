@@ -7,7 +7,6 @@
 }
 
 body {
-    font-family: Helvetica;
     margin: 0;
     padding: 0;
     background-color: $bg-color;
@@ -15,17 +14,22 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 main {
-    // max-width: 1700px;
-    align-self: center;
+    width: 100%;
 }
 
 section {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 @import 'layout';
 @import 'header';
 @import 'hero';
+@import 'about';
+@import 'prices';
