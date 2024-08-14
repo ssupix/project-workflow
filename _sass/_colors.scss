@@ -1,0 +1,318 @@
+// COLOR THEMES
+
+#light {
+    background-color: $light;
+    color: $dark;
+
+    header {
+        border: 2px solid $blue-200;
+        background-color: $grey-a;
+        background-color: $grey-a;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        a {
+            color: $blue-400;
+        }
+
+        a:hover {
+            color: $blue-200;
+        }
+
+        .icon {
+            color: $blue-400;
+        }
+
+        .icon:hover {
+            color: $blue-200;
+        }
+
+        svg {
+            .cls-1 {
+                fill: $blue-200;
+            }
+    
+            .cls-2 {
+                fill: $blue-300;
+            }
+        }
+    }
+
+    .mobile-nav {
+        background-color: $light;
+
+        a {
+            color: $blue-400;
+        }
+
+        a:hover {
+            color: $blue-200;
+        }
+
+        .icon {
+            color: $blue-400;
+        }
+
+        .icon:hover {
+            color: $blue-200;
+        }
+    }
+
+    .title {
+        background-color: $blue-a;
+        border: 2px solid $blue-200;
+        color: $light;
+
+        h4 {
+            color: $blue-400;
+        }
+        
+        h2 {
+            color: $blue-200;
+        }
+    }
+    
+    input {
+        background-color: $light;
+        color: $dark;
+        border: 2px $green solid;
+    }
+
+    .button--submit {
+        background-color: $green;
+    }
+
+    .button--submit:hover {
+        background-color: $blue-200;
+    }
+
+    .projects {
+        border: 2px $blue-200 solid;
+        color: $blue-300;
+    }
+
+    .box {
+        border: $blue-200 solid 2px;
+    }
+
+    .card-wrap {
+
+        h2 {
+            color: $blue-400;
+            font-weight: 400;
+        }
+
+        h5 {
+            color: $blue-300;
+        }
+
+        button {
+            background-color: $blue-100;
+            border: 2px $light solid;
+        }
+
+        button:hover {
+            background-color: $blue-200;
+        }
+
+        .important {
+
+            button {
+                background-color: $green;
+            }
+
+            button:hover {
+                background-color: $blue-200;
+            }
+        }
+    }
+
+    .card,
+    .long-card {
+        border: $blue-200 solid 2px;
+        background-color: $grey;
+
+        &.important {
+            border: $green solid 2px;
+        }
+    }
+
+    .question {
+        border: $grey 2px solid;
+        color: $blue-400;
+        background-color: $blue-a;
+    }
+
+    .active, .question:hover {
+        background-color: $grey-a;
+        color: $blue-200;
+        border: $green 2px solid;
+    }
+
+    .answercont {
+        background-color: $grey-a;
+        color: $blue-400;
+    }
+}
+
+#dark {
+    background-color: $dark;
+    color: $light;
+
+    header {
+        border: 2px solid $blue-300;
+        background-color: $grey-a;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        a {
+            color: $light;
+        }
+
+        a:hover {
+            color: $green;
+        }
+
+        .icon {
+            color: $light;
+        }
+
+        .icon:hover {
+            color: $green;
+        }
+
+        svg {
+            .cls-1 {
+                fill: $light
+            }
+    
+            .cls-2 {
+                fill: $green;
+            }
+        }
+    }
+
+    .mobile-nav {
+        background-color: $dark;
+
+        a {
+            color: $light;
+        }
+
+        a:hover {
+            color: $green;
+        }
+
+        .icon {
+            color: $light;
+        }
+
+        .icon:hover {
+            color: $green;
+        }
+
+        button {
+            color: $light;
+        }
+    }
+
+    .title {
+        background-color: $blue-a;
+        border: 2px solid $blue-200;
+        color: $dark;
+
+        h4 {
+            color: $blue-400;
+        }
+        
+        h2 {
+            color: $blue-100;
+        }
+    }
+
+    input {
+        background-color: $dark;
+        color: $dark;
+        border: 2px $green solid;
+    }
+
+    .button--submit {
+        background-color: $green;
+    }
+
+    .button--submit:hover {
+        background-color: $blue-200;
+    }
+
+    .projects {
+        border: 2px $blue-200 solid;
+        color: $blue-100;
+    }
+
+    .box {
+        border: $blue-200 solid 2px;
+    }
+
+    .card-wrap {
+
+        h2 {
+            color: $light;
+            font-weight: 400;
+        }
+
+        h5 {
+            color: $blue-100;
+        }
+
+        h3 {
+            color: $grey;
+        }
+
+        button {
+            background-color: $blue-100;
+            border: 2px $light solid;
+        }
+
+        button:hover {
+            background-color: $blue-200;
+        }
+
+        .important {
+
+            button {
+                background-color: $green;
+            }
+
+            button:hover {
+                background-color: $blue-200;
+            }
+        }
+    }
+
+    .card,
+    .long-card {
+        border: $blue-200 solid 2px;
+        background-color: $grey-a;
+
+        &.important {
+            border: $green solid 2px;
+        }
+    }
+
+    .question {
+        border: $grey 2px solid;
+        color: $light;
+        background-color: $blue-a;
+    }
+
+    .active, .question:hover {
+        background-color: $grey-a;
+        color: $blue-200;
+        border: $green 2px solid;
+    }
+
+    .answercont {
+        background-color: $grey-a;
+        color: $light;
+    }
+}

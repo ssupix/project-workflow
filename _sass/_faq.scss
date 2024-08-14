@@ -1,0 +1,54 @@
+// FAQ SECTION
+
+.faq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .grid {
+        max-width: 1700px;
+    }
+
+    .question {
+        cursor: pointer;
+        padding: 2rem 1rem;
+        font-size: 1.2rem;
+        text-align: left;
+        outline: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .question::after {
+        content: "\002B";
+        font-size: 2.2rem;
+        position: absolute;
+        right: 20px;
+        transition: 0.2s;
+    }
+
+    .question.active::after {
+        transform: rotate(45deg);
+    }
+
+    .answercont {
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.3s;
+        justify-content: center;
+        line-height: 1.5rem;
+
+        p {
+            width: 70%;
+        }
+
+        .answer {
+            padding: 2rem;
+            font-size: 1.2rem;
+        }
+    }
+}
