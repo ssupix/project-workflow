@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WORKFLOW - Project Management App</title>
     <link rel="stylesheet" href="./_sass/style.css">
-    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <!-- ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
 
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,78 +17,33 @@
 
 </head>
 <body id="light">
-
     <header>
-        <div class="logo">
-            <div class="logo-black">
-                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960.47 182.93">
-                    <g id="Layer_1-2" data-name="Layer_1">
-                        <g>
-                        <path class="cls-1" d="M174.67,114.53c10.91,0,18.81,2.66,29.17,5.52,10.34,2.86,20.95,3.46,31.25,6.71L294.72,2.83h-57.77l-34.07,86.27L166.33,2.83h-35.98l-36.55,86.27L59.7,2.83H1.96l60.01,124.77c.3-.18.59-.37.95-.52,4.5-1.91,8.97-3.43,13.44-4.7,1.15-1.43,2.89-2.43,5.22-2.53,15.02-.63,28.23-9.24,43.48-8.23l23.28-61.26,24.45,64.41c.58-.15,1.2-.25,1.88-.25Z"/>
-                        <path class="cls-1" d="M384.66,141.55c-33.58,0-58.29-6.91-74.14-20.74-14.01-12.25-21.02-28.94-21.02-50.09s7.01-37.75,21.02-49.99C326.37,6.91,351.08,0,384.66,0s58.29,6.91,74.14,20.74c14.01,12.25,21.02,28.91,21.02,49.99s-7.01,37.84-21.02,50.09c-15.85,13.82-40.56,20.74-74.14,20.74ZM384.66,105.1c13.76,0,23.86-3.94,30.3-11.84,5.17-6.38,7.76-13.89,7.76-22.54s-2.59-16.13-7.76-22.44c-6.44-7.95-16.54-11.93-30.3-11.93s-23.89,3.98-30.39,11.93c-5.18,6.31-7.76,13.79-7.76,22.44s2.59,16.16,7.76,22.54c6.5,7.89,16.63,11.84,30.39,11.84Z"/>
-                        <path class="cls-1" d="M629.54,128.08c4.07-6.56,12.22-10.07,20.23-11.57,4.47-.84,12.14-1.5,14.72-2,3.19-.62,10.82-4.51,15.98-6.27-.56-1.44-1.16-2.86-1.87-4.23-2.68-5.21-8.54-9.67-17.56-13.4,9.34-3.79,16.18-8.93,20.5-15.43,4.32-6.5,6.49-14.52,6.49-24.05,0-11.42-3.12-20.69-9.37-27.79s-16.18-12.31-29.78-15.62c-13.6-3.31-31.48-4.97-53.64-4.97h-92.7v135.87h57v-39.2h37.02c8.52.19,14.94,1.6,19.27,4.21,4.32,2.62,7.37,5.9,9.14,9.85,1.77,3.95,3.09,7.97,3.98,12.07.17.88.39,1.7.59,2.52ZM625.21,61.21c-2.49,1.42-6.36,2.54-11.6,3.36-5.24.82-12.4,1.23-21.49,1.23l-32.57.09v-29.54h32.57c9.09,0,16.25.41,21.49,1.23,5.24.82,9.1,1.94,11.6,3.36,2.49,1.42,4.09,3.02,4.78,4.78.69,1.77,1.04,3.57,1.04,5.4s-.35,3.61-1.04,5.35c-.7,1.74-2.29,3.31-4.78,4.73Z"/>
-                        <path class="cls-1" d="M933.84,2.75h-74.61l-91.47,62.87V2.75h-57v100.2c.07,0,.13-.01.2-.02,1.12-1.01,2.62-1.69,4.57-1.69,6.72,0,13.47-.08,20.25-.14,16.82-.81,33.66-.9,50.52-.9,1.4,0,2.56.36,3.53.92l11.64-7.94,11.54,8.99h10.6c3.79,0,5.99,2.42,6.67,5.27,14.35,3.09,29.07,5.28,43.16,9.46,14.76,4.38,28.16,12.07,43.34,15.18,3.76.77,5.27,3.62,5.12,6.54h11.94l-97.34-69.4L933.84,2.75Z"/>
-                        <path class="cls-2" d="M10.94,154.47c27.67-18.93,59.04-31.63,92.12-37.19,30.41-5.11,61.71-3.18,91.9,2.49,61.43,11.52,119.12,36.78,179.65,51.76,29.71,7.35,60.39,12.28,91.08,11.27,33.25-1.09,65.01-10.02,95.76-22.25,31.32-12.47,61.6-27.57,93.58-38.36,29.93-10.1,61.19-15.92,92.74-17.34,62.71-2.83,126.21,11.06,181.49,40.96,6.85,3.71,13.56,7.66,20.14,11.82,8.19,5.17,15.72-7.8,7.57-12.95-54.3-34.3-117.85-53.04-181.96-55.02-32.27-1-64.79,2.33-96.16,9.99-32.88,8.03-63.75,21.8-94.69,35.23-30.98,13.44-62.78,26.55-96.48,31.14-30.17,4.12-60.93,1.35-90.62-4.75-61.9-12.72-120.16-38.54-181.72-52.55-30.41-6.92-61.82-11.01-93.03-8.72-34.21,2.51-67.72,12.3-97.89,28.63-7.24,3.92-14.25,8.25-21.05,12.9-7.92,5.42-.43,18.42,7.57,12.95h0Z"/>
-                        </g>
-                    </g>
-                </svg>
+        <div class="navbar grid">
+            <div class="logo col-3">
+                WORKFLOW
             </div>
-        </div>
-        <nav class="desktop-nav">
-            <a href="#about">ABOUT</a>
-            <a href="#prices">PRICES</a>
-            <a href="#faq">FAQ</a>
-        </nav>
-        <div class="icons">
-            <i data-feather="twitter" class="icon social"></i>
-            <i data-feather="instagram" class="icon social"></i>
-            <icon-container id="theme-toggle">
-                <i data-feather="sun" id="light-icon" class="icon"></i>
-                <i data-feather="moon" id="dark-icon" class="icon" style="display: none;"></i>
-            </icon-container>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <nav class="desktop-nav col-6">
+                <a href="#about">ABOUT</a>
+                <a href="#prices">PRICES</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <div class="icons col-3">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <div class="mode-container">
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </div>
             </div>
         </div>
     </header>
-    
-    <nav class="mobile-nav">
-        <div class="mobile-nav-header">
-            <button class="close-menu">
-                <i data-feather="x"></i>
-            </button>
-        </div>
-        <a href="#about">ABOUT</a>
-        <a href="#prices">PRICES</a>
-        <a href="#faq">FAQ</a>
-        <div class="mobile-icons">
-            <i data-feather="twitter" class="icon"></i>
-            <i data-feather="instagram" class="icon"></i>
-        </div>
-    </nav>
 
     <main>
         <section class="hero">
             <div class="grid">
-                <div class="col-6-sm col-12 hero-info">
-                    <div class="title">
-                        <h1>WorkFlow</h1>
-                        <h2>Deliever projects on time, every time</h2>
-                        <h4>Your New Favourite Project Management App.</h4>
-                    </div>
-                    <div class="projects">
-                        <p id="big">600+</p>
-                        <p>projects created with WorkFlow</p>
-                    </div>
-                </div>
-                <div class="col-6-sm col-12 video-hero video">
-                    <form class="input-group">
-                        <input type="email" class="input" id="email" name="email" placeholder="your@email.com" required />
-                        <input type="submit" class="button--submit " value="Sign Up">
-                    </form>
-                    <video src="./video/brainstorming.mp4" autoplay muted loop></video>
+                <div class="col-6 intro">
+                    <h1>deliver projects on time, <br>every time, <br> with <span class="name">WorkFlow</span></h1>
+                    <p>Your new favourite project management app.</p>
                 </div>
             </div>
         </section>

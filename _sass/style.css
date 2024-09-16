@@ -309,242 +309,32 @@ template {
 }
 
 #light {
-  background-color: #f0f0f0;
-  color: #050505;
+  background-color: #EAECEF;
 }
-#light header {
-  border: 2px solid #A7B2FF;
-  background-color: rgba(217, 217, 217, 0.5);
-  background-color: rgba(217, 217, 217, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+#light .navbar {
+  background-color: #F8F8F8;
+  padding: 20px;
 }
-#light header a {
-  color: #1B1D2A;
+#light .navbar nav a {
+  color: #2D2D2D;
 }
-#light header a:hover {
+#light .navbar nav a:hover {
   color: #A7B2FF;
 }
-#light header .icon {
-  color: #1B1D2A;
-}
-#light header .icon:hover {
-  color: #A7B2FF;
-}
-#light header svg .cls-1 {
-  fill: #A7B2FF;
-}
-#light header svg .cls-2 {
-  fill: #565F9F;
-}
-#light .mobile-nav {
-  background-color: #f0f0f0;
-}
-#light .mobile-nav a {
-  color: #1B1D2A;
-}
-#light .mobile-nav a:hover {
-  color: #A7B2FF;
-}
-#light .mobile-nav .icon {
-  color: #1B1D2A;
-}
-#light .mobile-nav .icon:hover {
-  color: #A7B2FF;
-}
-#light .title {
-  background-color: rgba(168, 178, 255, 0.5);
-  border: 2px solid #A7B2FF;
-  color: #f0f0f0;
-}
-#light .title h4 {
-  color: #1B1D2A;
-}
-#light .title h2 {
-  color: #A7B2FF;
-}
-#light input {
-  background-color: #f0f0f0;
-  color: #050505;
-  border: 2px #ACEE30 solid;
-}
-#light .button--submit {
-  background-color: #ACEE30;
-}
-#light .button--submit:hover {
+#light .navbar .icons {
   background-color: #A7B2FF;
 }
-#light .projects {
-  border: 2px #A7B2FF solid;
-  color: #565F9F;
+#light .navbar .icons ion-icon {
+  color: #F8F8F8;
 }
-#light .box {
-  border: #A7B2FF solid 2px;
+#light .navbar .icons ion-icon:hover {
+  color: #5F70E5;
 }
-#light .card-wrap h2 {
-  color: #1B1D2A;
-  font-weight: 400;
+#light .navbar .mode-container {
+  background-color: #F8F8F8;
 }
-#light .card-wrap h5 {
-  color: #565F9F;
-}
-#light .card-wrap button {
-  background-color: #C0C6F5;
-  border: 2px #f0f0f0 solid;
-}
-#light .card-wrap button:hover {
-  background-color: #A7B2FF;
-}
-#light .card-wrap .important button {
-  background-color: #ACEE30;
-}
-#light .card-wrap .important button:hover {
-  background-color: #A7B2FF;
-}
-#light .card,
-#light .long-card {
-  border: #A7B2FF solid 2px;
-  background-color: #D9D9D9;
-}
-#light .card.important,
-#light .long-card.important {
-  border: #ACEE30 solid 2px;
-}
-#light .question {
-  border: #D9D9D9 2px solid;
-  color: #1B1D2A;
-  background-color: rgba(168, 178, 255, 0.5);
-}
-#light .active, #light .question:hover {
-  background-color: rgba(217, 217, 217, 0.5);
-  color: #A7B2FF;
-  border: #ACEE30 2px solid;
-}
-#light .answercont {
-  background-color: rgba(217, 217, 217, 0.5);
-  color: #1B1D2A;
-}
-
-#dark {
-  background-color: #050505;
-  color: #f0f0f0;
-}
-#dark header {
-  border: 2px solid #565F9F;
-  background-color: rgba(217, 217, 217, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-}
-#dark header a {
-  color: #f0f0f0;
-}
-#dark header a:hover {
-  color: #ACEE30;
-}
-#dark header .icon {
-  color: #f0f0f0;
-}
-#dark header .icon:hover {
-  color: #ACEE30;
-}
-#dark header svg .cls-1 {
-  fill: #f0f0f0;
-}
-#dark header svg .cls-2 {
-  fill: #ACEE30;
-}
-#dark .mobile-nav {
-  background-color: #050505;
-}
-#dark .mobile-nav a {
-  color: #f0f0f0;
-}
-#dark .mobile-nav a:hover {
-  color: #ACEE30;
-}
-#dark .mobile-nav .icon {
-  color: #f0f0f0;
-}
-#dark .mobile-nav .icon:hover {
-  color: #ACEE30;
-}
-#dark .mobile-nav button {
-  color: #f0f0f0;
-}
-#dark .title {
-  background-color: rgba(168, 178, 255, 0.5);
-  border: 2px solid #A7B2FF;
-  color: #050505;
-}
-#dark .title h4 {
-  color: #1B1D2A;
-}
-#dark .title h2 {
-  color: #C0C6F5;
-}
-#dark input {
-  background-color: #050505;
-  color: #050505;
-  border: 2px #ACEE30 solid;
-}
-#dark .button--submit {
-  background-color: #ACEE30;
-}
-#dark .button--submit:hover {
-  background-color: #A7B2FF;
-}
-#dark .projects {
-  border: 2px #A7B2FF solid;
-  color: #C0C6F5;
-}
-#dark .box {
-  border: #A7B2FF solid 2px;
-}
-#dark .card-wrap h2 {
-  color: #f0f0f0;
-  font-weight: 400;
-}
-#dark .card-wrap h5 {
-  color: #C0C6F5;
-}
-#dark .card-wrap h3 {
-  color: #D9D9D9;
-}
-#dark .card-wrap button {
-  background-color: #C0C6F5;
-  border: 2px #f0f0f0 solid;
-}
-#dark .card-wrap button:hover {
-  background-color: #A7B2FF;
-}
-#dark .card-wrap .important button {
-  background-color: #ACEE30;
-}
-#dark .card-wrap .important button:hover {
-  background-color: #A7B2FF;
-}
-#dark .card,
-#dark .long-card {
-  border: #A7B2FF solid 2px;
-  background-color: rgba(217, 217, 217, 0.5);
-}
-#dark .card.important,
-#dark .long-card.important {
-  border: #ACEE30 solid 2px;
-}
-#dark .question {
-  border: #D9D9D9 2px solid;
-  color: #f0f0f0;
-  background-color: rgba(168, 178, 255, 0.5);
-}
-#dark .active, #dark .question:hover {
-  background-color: rgba(217, 217, 217, 0.5);
-  color: #A7B2FF;
-  border: #ACEE30 2px solid;
-}
-#dark .answercont {
-  background-color: rgba(217, 217, 217, 0.5);
-  color: #f0f0f0;
+#light .navbar .mode-container ion-icon {
+  color: #2D2D2D;
 }
 
 * {
@@ -557,13 +347,11 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
   overflow-x: hidden;
-  display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Urbanist", sans-serif;
+  font-family: "Satoshi", sans-serif;
   transition: all 0.5s ease-in-out;
 }
 
@@ -579,6 +367,7 @@ section {
 }
 
 .grid {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: auto;
@@ -673,121 +462,53 @@ section {
   }
 }
 header {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   position: sticky;
   top: 0;
-  width: 96%;
-  max-width: 1700px;
-  margin: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 1rem;
-  border-radius: 7px;
+  border-radius: 50px;
   z-index: 500;
-}
-header .logo {
-  height: 100%;
-  min-width: 160px;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-header .logo svg {
-  width: auto;
-}
-header nav {
+  width: 100%;
   display: flex;
-  gap: 2rem;
-  z-index: 999;
+  justify-content: center;
+  align-items: center;
 }
-header nav a {
+header .navbar {
+  align-items: center;
+  border-radius: 50px;
+}
+header .navbar nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+header .navbar nav a {
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
-}
-header .icons {
-  min-width: 160px;
-  display: flex;
-  justify-content: end;
-  gap: 1rem;
-}
-header .icons .icon {
-  transition: color 0.3s ease;
-}
-header .icons i {
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-header .hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  cursor: pointer;
-}
-header .hamburger span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background-color: currentColor;
   transition: all 0.3s ease;
 }
-
-.mobile-nav {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 250px;
-  height: 100vh;
-  padding: 2rem;
-  transition: right 0.3s ease;
+header .navbar .icons {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  z-index: 999;
-}
-.mobile-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-.mobile-nav .mobile-nav-header {
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  margin-bottom: 2rem;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 1.5rem;
 }
-.mobile-nav .mobile-nav-header .close-menu {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+header .navbar .icons ion-icon {
+  transition: all 0.3s ease;
 }
-.mobile-nav .mobile-nav-header .close-menu i {
-  width: 24px;
-  height: 24px;
-}
-.mobile-nav.open {
-  right: 0;
-}
-.mobile-nav .mobile-icons {
-  margin-top: 2rem;
+header .navbar .icons .mode-container {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
 }
 
-@media (max-width: 768px) {
-  header .desktop-nav {
-    display: none;
-  }
-  header .hamburger {
-    display: flex;
-  }
-  header .icons .social {
-    display: none;
-  }
-}
 .hero-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
