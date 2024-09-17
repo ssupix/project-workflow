@@ -662,50 +662,62 @@ header .navbar .icons .mode-container {
   font-size: 24px;
 }
 
-.video-about video {
-  height: 100%;
-}
-
 .about {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.about-info {
+  margin: 1rem;
+  margin-top: 0;
+  border-top: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  height: 100%;
+  gap: 1rem;
+  height: 60vh;
+  width: auto;
+  border-radius: 10px;
+  padding: 8rem 0;
+  background-image: url(../media/light-about.png);
+  background-size: cover;
 }
-.about-info h3 {
+.about p {
+  font-size: 36px;
   width: 50%;
-  font-size: 50px;
-  font-weight: 100;
-  text-transform: uppercase;
-  margin-bottom: 8rem;
+  text-align: center;
+  color: #5F70E5;
 }
-.about-info .info-wrap {
+.about p .color {
+  color: #A7B2FF;
+}
+.about p .emph {
+  background-color: #D9D9D9;
+  color: white;
+  padding: 0 15px;
+  border-radius: 50px;
+}
+.about .signature {
+  font-size: 16px;
+  color: #7A7A7A;
+}
+.about .container {
   display: flex;
-  width: 100%;
-  flex-grow: 1;
+  flex-direction: row;
+  gap: 10px;
 }
-.about-info .info-wrap .box {
-  width: 50%;
-  flex-grow: 1;
-  border-radius: 7px;
+.about .container .circle {
+  height: 65px;
+  width: 65px;
+  background-color: #DFE3FF;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #A7B2FF;
+  border: 1px solid #A7B2FF;
 }
-.about-info .info-wrap p {
-  width: 50%;
-  margin-left: 1rem;
-  font-size: 20px;
-  line-height: 1.7;
-  font-weight: 200;
+.about .container .picture {
+  background-image: url(../media/ceo.png);
+  background-size: cover;
 }
 
-@media screen and (max-width: 1100px) {
-  .video-about video {
-    display: none;
-  }
-}
 .card-wrap {
   margin: 10rem 0;
   width: 75%;

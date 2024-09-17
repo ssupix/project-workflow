@@ -1,50 +1,64 @@
 // ABOUT SECTION
 
-.video-about video {
-    height: 100%;
-}
-
 .about {
-    height: fit-content;
-}
-
-.about-info {
+    margin: 1rem;
+    margin-top: 0;
+    border-top: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 100%;
+    gap: 1rem;
+    height: 60vh;
+    width: auto;
+    border-radius: 10px;
+    padding: 8rem 0;
+    background-image: url(../media/light-about.png);
+    background-size: cover;
 
-    h3 {
+    p {
+        font-size: 36px;
         width: 50%;
-        font-size: 50px;
-        font-weight: 100;
-        text-transform: uppercase;
-        margin-bottom: 8rem;
+        text-align: center;
+        color: $blue-100;
+
+        .color {
+            color: $blue-200;
+        }
+
+        .emph {
+            background-color: $pure-grey;
+            color: white;
+            padding: 0 15px;
+            border-radius: 50px;
+        }
     }
 
-    .info-wrap {
+    .signature {
+        font-size: 16px;
+        color: $dark-grey;
+    }
+
+    .container {
         display: flex;
-        width: 100%;
-        flex-grow: 1;
+        flex-direction: row;
+        gap: 10px;
 
-        .box {
-            width: 50%;
-            flex-grow: 1;
-            border-radius: 7px;
+        .circle {
+            height: 65px;
+            width: 65px;
+            background-color: $blue-300;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $blue-200;
+            border: 1px solid $blue-200;
         }
 
-        p {
-            width: 50%;
-            margin-left: 1rem;
-            font-size: 20px;
-            line-height: 1.7;
-            font-weight: 200;
+        .picture {
+            background-image: url(../media/ceo.png);
+            background-size: cover;
         }
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    
-    .video-about video{
-        display: none;
     }
 }
