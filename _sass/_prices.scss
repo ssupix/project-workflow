@@ -1,85 +1,135 @@
 // PRICES SECTION
 
-.card-wrap {
-    margin: 10rem 0;
-    width:  75%;
-    max-width: 1200px;
-    padding: 1rem;
+.prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 12rem 0;
+
+  h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .cards {
+    max-width: 95%;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 1rem;
 
-    h2 {
-      font-size: 40px;
-    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-width: 320px;
 
-    .card-container {
-        width: 100%;
+      .card-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: $pure-grey;
+        padding: 20px 40px 20px 20px;
+        border: 3px solid $off-white;
+        border-radius: 10px;
+        
 
-        .card {
-          height: fit-content;
-          border-radius: 7px;
-          transition: all .1s ease;
-          padding: 4rem 1.5rem 2rem 1.5rem;
+        .card-icon {
+          height: 55px;
+          width: 55px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $dark;
+          color: $off-white;
+          border-radius: 50px;
+        }
+
+        .card-title {
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          gap: 4rem;
+          gap: 5px;
 
-          .card-title {
+          h3 {
+            font-size: 20px;
+            color: $dark;
+          }
+
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 20px 50px 20px;
+        gap: 10px;
+        background-color: $off-white;
+        border-radius: 10px;
+
+        .card-tag {
+          font-size: 12px;
+          padding: 8px 10px;
+          background-color: $pure-grey;
+          width: fit-content;
+          border-radius: 50px;
+          color: $blue-100;
+          margin-bottom: 10px;
+        }
+
+        .card-price {
+          color: $blue-100;
+          font-weight: bold;
+          font-size: 40px;
+
+          .per-month {
+            font-size: 24px;
+            color: $pure-grey;
+            margin-left: 10px;
+          }
+        }
+
+        p {
+          color: $blue-100;
+          font-size: 16px;
+        }
+
+        button {
+          border: 2px $pure-grey solid;
+          background-color: $off-white;
+          border-radius: 50px;
+          padding: 15px;
+          font-size: 20px;
+          font-weight: normal;
+          margin-top: 20px;
+
+          &.this-btn {
+            background-color: $green;
+            border-color: $green;
+          }
+        }
+
+        ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          margin-top: 10px;
+
+          li {
             display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            h3 {
-              font-size: 2.5rem;
-              line-height: .5;
-              font-weight: 600;
-            }
-
-            h5 {
-              font-size: 1.3rem;
-              font-weight: 400;
-              text-transform: uppercase;
-            }
-          }
-
-          ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-          }
-
-          button {
-            max-width: 17rem;
-            width: 90%;
-            text-transform: uppercase;
-            font-weight: 100;
-            outline: none;
-            min-height: 70px;
-            padding: .5em 1em;
-            border-radius: 6px;
-            font-size: 21px;
-            cursor: pointer;
-            transition: all .3s ease-in-out;
-            border: none;
-            align-self: center;
+            gap: .5rem;
+            align-items: center;
           }
         }
-
-        .card:hover {
-          scale: 1.01;
-        }
-
-        .long-card {
-            min-height: 9vw;
-            border-radius: 7px;
-            transition: all .1s ease;
-        }
-
-        .long-card:hover {
-          scale: 1.01;
-        }
+      }
     }
+  }
 }

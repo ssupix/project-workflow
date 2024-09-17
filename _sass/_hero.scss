@@ -29,6 +29,7 @@
             line-height: 1.5;
             margin-left: 20px;
             margin-top: 20px;
+            color: $dark;
 
             .name {
                 font-weight: bold;
@@ -37,6 +38,7 @@
 
         p {
             margin-left: 20px;
+            color: $dark-grey;
         }
 
         .signup-form {

@@ -6,11 +6,21 @@
     align-items: center;
     width: 100%;
 
-    .grid {
-        max-width: 1700px;
+    h2 {
+        font-size: clamp(2rem, 13vw, 14rem);
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+    }
+
+    .faq-g {
+        width: auto;
     }
 
     .question {
+        background-color: $blue-200;
+        border: 2px solid $pure-grey;
+        border-radius: 10px;
         cursor: pointer;
         padding: 2rem 1rem;
         font-size: 1.2rem;
@@ -21,6 +31,12 @@
         align-items: center;
         cursor: pointer;
         transition: 0.4s;
+        font-weight: bold;
+    }
+
+    .active {
+        background-color: $pure-grey;
+        border-color: $green;
     }
 
     .question::after {
