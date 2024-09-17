@@ -7,10 +7,10 @@
     width: 100%;
 
     h2 {
-        font-size: clamp(2rem, 13vw, 14rem);
+        font-size: clamp(2rem, 13vw, 18rem);
         text-align: center;
         width: 100%;
-        font-weight: 600;
+        font-weight: normal;
     }
 
     .faq-g {
@@ -18,8 +18,7 @@
     }
 
     .question {
-        background-color: $blue-200;
-        border: 2px solid $pure-grey;
+        border: 2px solid;
         border-radius: 10px;
         cursor: pointer;
         padding: 2rem 1rem;
@@ -31,12 +30,7 @@
         align-items: center;
         cursor: pointer;
         transition: 0.4s;
-        font-weight: bold;
-    }
-
-    .active {
-        background-color: $pure-grey;
-        border-color: $green;
+        font-weight: normal;
     }
 
     .question::after {

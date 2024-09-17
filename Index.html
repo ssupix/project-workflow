@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Shadows+Into+Light&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body id="light">
+<body id="dark">
     <header>
         <div class="navbar grid">
             <div class="logo col-3">
@@ -31,8 +31,9 @@
                 <ion-icon name="logo-instagram"></ion-icon>
                 <ion-icon name="logo-linkedin"></ion-icon>
                 <ion-icon name="logo-facebook"></ion-icon>
-                <div class="mode-container">
-                    <ion-icon name="sunny-outline"></ion-icon>
+                <div class="mode-container" id="theme-toggle">
+                    <ion-icon name="sunny-outline" id="light-icon"></ion-icon>
+                    <ion-icon name="moon-outline" id="dark-icon"></ion-icon>
                 </div>
             </div>
         </div>
@@ -41,18 +42,18 @@
     <main>
         <section class="hero">
             <div class="grid hero-grid">
-                <div class="col-6 intro">
-                    <h1>deliver projects on time, <br>every time, <br> with <span class="name">WorkFlow</span></h1>
+                <div class="col-12 col-6-sm intro">
+                    <h1>Deliver projects on time, <br>every time, <br> with <span class="name">WorkFlow.</span></h1>
                     <p>Your new favourite project management app.</p>
                     <form class="signup-form grid">
                         <input class="col-9" type="email" placeholder="Enter your email" required />
                         <button class="col-3" type="submit">Sign Up</button>
                     </form>
-                    <img src="./media/line.png" alt="line">
+                    <img src="./media/line.svg" alt="line">
                 </div>
-                <div class="col-6 hero-info">
+                <div class="col-12 col-6-sm hero-info">
                     <div class="hero-video">
-                        <video src="./video/notepad.mp4" autoplay muted loop></video>
+                        <video src="./video/hero.mp4" autoplay muted loop></video>
                     </div>
                     <div class="hero-stats grid">
                         <div class="col-6 hero-projects">
@@ -98,52 +99,51 @@
                         <button>Get Started</button>
                         <ul>
                             <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>File sharing</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Basic Support</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Access to cloud integrations</li>
                         </ul>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-head">
-                        <div class="card-icon"><ion-icon name="man-outline"></ion-icon></div>
+                        <div class="card-icon"><ion-icon name="rocket-outline"></ion-icon></div>
                         <div class="card-title">
-                            <h3>Freelancer</h3>
-                            <p>Essential tools for solo entrepreneurs.</p>
+                            <h3>Start Up</h3>
+                            <p>Advanced features for growing teams.</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="card-tag">save 20%</div>
-                        <div class="card-price">$16.00<span class="per-month">/per month</span></div>
-                        <p>Essential tools for solo entrepreneurs.</p>
+                        <div class="card-tag">save 30%</div>
+                        <div class="card-price">$24.00<span class="per-month">/per month</span></div>
+                        <p>Advanced features for growing teams.</p>
                         <button class="this-btn">Get Started</button>
                         <ul>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Everything in Basic</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Advanced analytics</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Customizable workflows</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Priority support</li>
                         </ul>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-head">
-                        <div class="card-icon"><ion-icon name="man-outline"></ion-icon></div>
+                        <div class="card-icon"><ion-icon name="globe-outline"></ion-icon></div>
                         <div class="card-title">
-                            <h3>Freelancer</h3>
-                            <p>Essential tools for solo entrepreneurs.</p>
+                            <h3>Enterprise</h3>
+                            <p>Custom solutions for large operations.</p>
                         </div>
                     </div>
                     <div class="card-body">
-                        <div class="card-tag">save 20%</div>
-                        <div class="card-price">$16.00<span class="per-month">/per month</span></div>
-                        <p>Essential tools for solo entrepreneurs.</p>
+                        <div class="card-tag">save up to 50%</div>
+                        <div class="card-price">$78.00<span class="per-month">/per month</span></div>
+                        <p>Custom solutions for large operations.</p>
                         <button>Get Started</button>
                         <ul>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
-                            <li><ion-icon name="ellipse-outline"></ion-icon>Task management</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Everything in Pro</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Dedicated account manager</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Enterprise-level security</li>
+                            <li><ion-icon name="ellipse-outline"></ion-icon>Unlimited users and projects</li>
                         </ul>
                     </div>
                 </div>
@@ -198,21 +198,21 @@
                 </div>
             </div>
         </section>
-        <section class="email">
-                <div class="grid">
-                    <form class="col-12">
-                        <input type="email" class="input" id="email" name="email" placeholder="your@email.com" required />
-                        <input type="submit" class="button--submit " value="Sign Up">
-                    </form>
-                </div>
-        </section>
     </main>
 
     <footer>
-        <div class="grid">
-            <div class="col-12">
-                <p>&copy; 2024 WorkFlow. All rights reserved.</p>
-            </div>
+        <div class="footer">
+            <nav class="desktop-nav">
+                <a href="#about">ABOUT</a>
+                <a href="#prices">PRICES</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <h2>stay connected</h2>
+            <form class="signup-form grid">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit"><ion-icon name="mail-outline"></ion-icon></button>
+            </form>
+            <p>&copy; 2024 WorkFlow. All rights reserved.</p>
         </div>
     </footer>
 

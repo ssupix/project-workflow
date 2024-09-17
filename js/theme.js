@@ -1,4 +1,4 @@
-// COLOR THEME CHANGE
+// THEME
 
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkIcon = document.getElementById('dark-icon');
     const body = document.body;
 
+    // Check and apply saved theme from localStorage
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         body.id = savedTheme;
@@ -18,12 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Toggle theme and update icons
     themeToggle.addEventListener('click', () => {
         if (body.id === 'light') {
             body.id = 'dark';
             lightIcon.style.display = 'none';
             darkIcon.style.display = 'block';
-            localStorage.setItem('theme', 'dark'); 
+            localStorage.setItem('theme', 'dark');
         } else if (body.id === 'dark') {
             body.id = 'light';
             darkIcon.style.display = 'none';
@@ -32,5 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    feather.replace(); 
+    // Update ionicons (this line replaces feather.replace())
+    ionicons.ionicon();
 });

@@ -13,23 +13,16 @@
     width: auto;
     border-radius: 10px;
     padding: 8rem 0;
-    background-image: url(../media/light-about.png);
     background-size: cover;
 
     p {
         font-size: 36px;
         width: 50%;
         text-align: center;
-        color: $blue-100;
-
-        .color {
-            color: $blue-200;
-        }
+        line-height: 1.5;
 
         .emph {
-            background-color: $pure-grey;
-            color: $off-white;
-            padding: 0 15px;
+            padding: 5px 15px;
             border-radius: 50px;
         }
     }
@@ -47,13 +40,11 @@
         .circle {
             height: 65px;
             width: 65px;
-            background-color: $blue-300;
             border-radius: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: $blue-200;
-            border: 1px solid $blue-200;
+            border: 1px solid;
         }
 
         .picture {
