@@ -59,6 +59,21 @@
             }
         }
 
+        .hero-video {
+            .video-btn {
+                background-color: $off-white;
+            }
+
+            a {
+                color: $dark;
+            }
+
+            .icon {
+                background-color: $green;
+                color: $off-white;
+            }
+        }
+
         .hero-stats {
 
             .hero-projects {
@@ -274,6 +289,21 @@
             }
 
             button {
+                background-color: $green;
+                color: $dark;
+            }
+        }
+
+        .hero-video {
+            .video-btn {
+                background-color: $dark;
+            }
+
+            a {
+                color: $off-white;
+            }
+
+            .icon {
                 background-color: $green;
                 color: $dark;
             }

@@ -46,21 +46,27 @@
                     <h1>Deliver projects on time, <br>every time, <br> with <span class="name">WorkFlow.</span></h1>
                     <p>Your new favourite project management app.</p>
                     <form class="signup-form grid">
-                        <input class="col-9" type="email" placeholder="Enter your email" required />
-                        <button class="col-3" type="submit">Sign Up</button>
+                        <input class="col-8-xs col-6" type="email" placeholder="Enter your email" required />
+                        <button class="col-4-xs col-6" type="submit">Sign Up</button>
                     </form>
                     <img src="./media/line.svg" alt="line">
                 </div>
                 <div class="col-12 col-6-sm hero-info">
                     <div class="hero-video">
                         <video src="./video/hero.mp4" autoplay muted loop></video>
+                        <button class="video-btn">
+                            <a href="#">Teams <div class="icon">78</div></a>
+                        </button>
+                        <button class="video-btn">
+                            <a href="#">Sponsors <div class="icon">12</div></a>
+                        </button>
                     </div>
                     <div class="hero-stats grid">
-                        <div class="col-6 hero-projects">
+                        <div class="col-12 col-6-xs hero-projects">
                             <p class="numbers">600+</p>
                             <p>Projects created with workflow</p>
                         </div>
-                        <div class="col-6 hero-cta">
+                        <div class="col-12 col-6-xs hero-cta">
                             <p>Streamline collaboration and boost productivity.</p>
                             <button>
                                 <a href="#">Learn More <div class="icon"><ion-icon href="#about" name="arrow-down-outline"></ion-icon></div></a>
@@ -219,6 +225,10 @@
     <script>
         feather.replace();
     </script>
+
+    <!-- GSAP ANIMATIONS -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./js/movebtn.js"></script>
 
     <script src="./js/faq.js"></script>
     <script src="./js/theme.js"></script>

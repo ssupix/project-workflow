@@ -38,3 +38,20 @@
     .col-12-sm { grid-column: span 12; }
 
 }
+
+@media screen and (min-width: 650px) {
+    
+    .col-1-xs { grid-column: span 1; }
+    .col-2-xs { grid-column: span 2; }
+    .col-3-xs { grid-column: span 3; }
+    .col-4-xs { grid-column: span 4; }
+    .col-5-xs { grid-column: span 5; }
+    .col-6-xs { grid-column: span 6; }
+    .col-7-xs { grid-column: span 7; }
+    .col-8-xs { grid-column: span 8; }
+    .col-9-xs { grid-column: span 9; }
+    .col-10-xs { grid-column: span 10; }
+    .col-11-xs { grid-column: span 11; }
+    .col-12-xs { grid-column: span 12; }
+
+}

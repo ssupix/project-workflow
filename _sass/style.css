@@ -353,6 +353,16 @@ template {
   background-color: #ACEE30;
   color: #2D2D2D;
 }
+#light .hero .hero-video .video-btn {
+  background-color: #F8F8F8;
+}
+#light .hero .hero-video a {
+  color: #2D2D2D;
+}
+#light .hero .hero-video .icon {
+  background-color: #ACEE30;
+  color: #F8F8F8;
+}
 #light .hero .hero-stats .hero-projects {
   background: linear-gradient(to bottom, #DFE3FF, #F8F8F8);
 }
@@ -513,6 +523,16 @@ template {
   color: #F8F8F8;
 }
 #dark .hero .intro button {
+  background-color: #ACEE30;
+  color: #2D2D2D;
+}
+#dark .hero .hero-video .video-btn {
+  background-color: #2D2D2D;
+}
+#dark .hero .hero-video a {
+  color: #F8F8F8;
+}
+#dark .hero .hero-video .icon {
   background-color: #ACEE30;
   color: #2D2D2D;
 }
@@ -758,6 +778,44 @@ section {
     grid-column: span 12;
   }
 }
+@media screen and (min-width: 650px) {
+  .col-1-xs {
+    grid-column: span 1;
+  }
+  .col-2-xs {
+    grid-column: span 2;
+  }
+  .col-3-xs {
+    grid-column: span 3;
+  }
+  .col-4-xs {
+    grid-column: span 4;
+  }
+  .col-5-xs {
+    grid-column: span 5;
+  }
+  .col-6-xs {
+    grid-column: span 6;
+  }
+  .col-7-xs {
+    grid-column: span 7;
+  }
+  .col-8-xs {
+    grid-column: span 8;
+  }
+  .col-9-xs {
+    grid-column: span 9;
+  }
+  .col-10-xs {
+    grid-column: span 10;
+  }
+  .col-11-xs {
+    grid-column: span 11;
+  }
+  .col-12-xs {
+    grid-column: span 12;
+  }
+}
 header {
   position: sticky;
   top: 0;
@@ -772,6 +830,17 @@ header .navbar {
   align-items: center;
   border-radius: 50px;
   padding: 10px;
+}
+header .navbar .logo {
+  box-sizing: border-box;
+  background-color: #ACEE30;
+  padding: 10px;
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vmin;
 }
 header .navbar nav {
   display: flex;
@@ -826,6 +895,7 @@ header .navbar .icons .mode-container {
   flex-direction: column;
   gap: 1rem;
   overflow: hidden;
+  height: 80vh;
 }
 .hero .intro h1 {
   font-weight: 400;
@@ -847,7 +917,7 @@ header .navbar .icons .mode-container {
   gap: 1rem;
   border-radius: 50px;
   padding: 10px;
-  width: 70%;
+  width: 80%;
   margin-left: 20px;
 }
 .hero .intro .signup-form input {
@@ -858,7 +928,7 @@ header .navbar .icons .mode-container {
   border: none;
 }
 .hero .intro .signup-form button {
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 0;
   border: none;
   border-radius: 50px;
   font-size: 20px;
@@ -866,16 +936,13 @@ header .navbar .icons .mode-container {
   transition: all 0.3s ease;
 }
 .hero .intro img {
-  width: 105%;
-  height: auto;
-  margin-top: 4rem;
-  align-self: flex-end;
+  height: 100%;
 }
 .hero .hero-info {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  height: 80vh;
 }
 .hero .hero-info .hero-video {
   height: 60%;
@@ -883,12 +950,48 @@ header .navbar .icons .mode-container {
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
+  position: relative;
 }
 .hero .hero-info .hero-video video {
   height: 100%;
   width: -moz-max-content;
   width: max-content;
+}
+.hero .hero-info .video-btn {
+  position: absolute;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  bottom: 10%;
+  left: 10%;
+}
+.hero .hero-info .video-btn a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding-left: 0.5rem;
+  font-size: 20px;
+}
+.hero .hero-info .video-btn .icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.hero .hero-info .video-btn:nth-child(2) {
+  bottom: 70%;
+  left: 70%;
 }
 .hero .hero-info .hero-stats {
   width: auto;
@@ -915,6 +1018,7 @@ header .navbar .icons .mode-container {
   border-radius: 10px;
   background-size: cover;
   background-blend-mode: overlay;
+  gap: 1rem;
 }
 .hero .hero-info .hero-stats .hero-cta p {
   color: #F8F8F8;
@@ -952,6 +1056,28 @@ header .navbar .icons .mode-container {
   font-size: 24px;
 }
 
+@media screen and (max-width: 1100px) {
+  .hero {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero .hero-info {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .hero .hero-info .hero-video video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero .intro h1 {
+    font-size: 45px;
+  }
+  .hero .hero-info .hero-video .video-btn {
+    display: none;
+  }
+}
 .about {
   margin: 1rem;
   margin-top: 0;
@@ -1000,6 +1126,16 @@ header .navbar .icons .mode-container {
   background-size: cover;
 }
 
+@media screen and (max-width: 1100px) {
+  .about p {
+    width: 80%;
+    font-size: 28px;
+  }
+  .about .container .circle {
+    height: 45px;
+    width: 45px;
+  }
+}
 .prices {
   display: flex;
   justify-content: center;
@@ -1024,7 +1160,7 @@ header .navbar .icons .mode-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 390px;
+  max-width: 450px;
 }
 .prices .cards .card .card-head {
   display: flex;
@@ -1122,7 +1258,7 @@ header .navbar .icons .mode-container {
   border: 2px solid;
   border-radius: 10px;
   cursor: pointer;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   font-size: 1.2rem;
   text-align: left;
   outline: none;
@@ -1219,4 +1355,21 @@ footer .footer .signup-form button {
   align-items: center;
   justify-content: center;
   font-size: 24px;
+}
+
+@media screen and (max-width: 1100px) {
+  footer .footer h2 {
+    font-size: 55px;
+  }
+  footer .footer .signup-form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer .footer h2 {
+    font-size: 35px;
+  }
+  footer .footer .signup-form {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

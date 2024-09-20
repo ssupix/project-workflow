@@ -1,4 +1,4 @@
-// THEME
+// THEME SWITCH
 
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
